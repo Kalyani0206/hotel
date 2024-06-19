@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL PUNE!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <!--<link rel="shortcut icon" href="./logo.png" type="image/x-icon">-->
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h1><B>THE PRIDE HOTEL PUNE.</B></h1>
+                <p>Managing a 4-star hotel means delivering a premium guest experience. This includes spacious, well-equipped rooms, upscale dining, meeting facilities, and excellent service. These hotels prioritize guest comfort, luxury amenities, and personalized assistance. They often have stylish decor, wellness options, and sustainability practices. Room rates are higher to reflect the elevated services and amenities.</p>
+                <!-- <button type = "button" class = "head-btn">GET STARTED</button>
+            </div> -->
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#rooms">Rooms</a></li>
+                <li><a href = "#customers">customers reviews</a></li>
+            </ul>
+            <a href="signup.html" class="sign">SIGN UP</a><br>
+            <a href="login.html" class="sign">LOGIN</a>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>Food service involves preparing and serving food to customers in a restaurant or catering setting. It includes menu creation, food preparation, customer service, and ensuring a pleasant dining experience. Additionally, it may involve beverage service, catering for events, and adhering to health and safety regulations. Sustainability and marketing are also important considerations.</p>
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Refreshments are light snacks and beverages served to quench thirst and provide a brief break during meetings, events, or gatherings. They can include coffee, tea, water, juices, and simple snacks like cookies or sandwiches. Their purpose is to keep participants refreshed and encourage social interaction.</p>
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Housekeeping involves maintaining cleanliness and orderliness in a home, hotel, or similar establishment. It includes tasks like cleaning, tidying, laundry, and organizing to ensure a pleasant and hygienic environment for residents or guests.</p>
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Room security refers to measures and systems put in place to ensure the safety and protection of occupants and their belongings in a room. This may include locks, keycards, surveillance cameras, and safety procedures to prevent unauthorized access or theft.</p>
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form" action="/addData" method="post">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "45.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                A quiet room  with fresh air and windows that open.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Original art on the walls.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Good size flat screen TV.
+                            </li>
+                        </ul>
+                        <p>High-quality furnishings with opulent, expensive touches, attention to aesthetic detail, a quiet room with fresh air, original art on the walls, windows that open, robes and slippers, adequate storage, hangers, desk, reading chair, safe, good-size flat-screen TV.</p>
+                        <p></p>
+                        <p class = "rate">
+                            <span>9900/- rs /</span> Per Night
+                        </p>
+                        <a href="book.html" class="book">Book Now</a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "67.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Deluxe  Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                well furnished.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                bed side table.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                floor is covered with carpet.
+                            </li>
+                        </ul>
+                        <p>Size and price are usually the two main differences between standard and deluxe hotel rooms. Deluxe rooms are usually larger than their standard counterparts, may include a bathtub and a shower in the bathroom, and include more high-end amenities.</p>
+                        <p></p>
+                        <p class = "rate">
+                            <span>7000/-rs /</span> Per Night
+                        </p>
+                        <a href="book.html" class="book">Book Now</a>
+                    </div>
+
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "123.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Executive  Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                High speed internet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                separate workspace.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                king_queen sized bed.
+                            </li>
+                        </ul>
+                        <p>luxurious double bed and seating area, are popular with business travellers and families. Modern and contemporary, they may accommodate an extra bed or interconnect.</p>
+                        <p></p>
+                        <p class = "rate">
+                            <span>10000/- rs</span> Per Night
+                        </p>
+                        <a href="book.html" class="book">Book Now</a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>I'd be happy to help with a luxury room review, but I need more information. Are you looking for a review of a specific luxury room or property? Please provide details, and I'll assist you further.</p>
+                        
+                        <span>priya sharma , surat/india</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Certainly! I can provide a generic review of a deluxe room:
+
+                            A deluxe room typically offers a comfortable and spacious stay. The furnishings are often of high quality, and the room may include extra amenities like a mini-bar, a larger bathroom with upscale toiletries, and sometimes a beautiful view. The bed is usually plush and inviting, ensuring a good night's sleep. Overall, a deluxe room is a great choice for travelers who want a bit more comfort and luxury during their stay.</p>
+                        
+                        <span>harshad more , pune/india</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>The room was big. It had around 40inch television, fridge, sofa, two chairs and small table. It also had a balcony. Highlight of the room was a round bed. We initially were skeptical if it would be comfortable or not but it was very comfortable. There were nice paintings and bird wallstickers which my wife found to be "very pretty". The bathroom was big. It had a bathtub too.</p>
+                        
+                        <span>asma shaikh , mumbai/india</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Hotel & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at (CN) an unforgettable holiday.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Time</h2>
+                    <a href = "#">Check-in time : 14.00</a>
+                    <a href = "#">Cheke-out time : 5.00</a>
+                    
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            5, University Rd, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra 411005
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            pridehotel@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="../script.js"></script>
+    </body>
+</html>
